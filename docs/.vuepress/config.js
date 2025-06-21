@@ -22,7 +22,16 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
-    navbar: ['/ja/', '/ja/get-started'],
+    locales: {
+      '/': {
+        selectLanguageName: 'English',
+        navbar: ['/', '/get-started'],
+      },
+      '/ja/': {
+        selectLanguageName: '日本語',
+        navbar: ['/ja/', '/ja/get-started'],
+      },
+    },
   }),
 
   bundler: viteBundler(),
