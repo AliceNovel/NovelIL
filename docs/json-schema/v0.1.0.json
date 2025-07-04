@@ -1,0 +1,293 @@
+{
+  "type": "object",
+  "properties": {
+    "cells": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "images": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "foreground": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "background": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "audio": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "foreground": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "background": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "movies": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "foreground": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "background": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "plugins": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "selectors": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "ifAnd": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "ifOr": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "gameInfo": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "title": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "author": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "license": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "languageInfo": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "gameEngineCompatibility": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "state": {
+                "enum": [
+                  "Unknown",
+                  "Compatible",
+                  "PartiallyCompatible",
+                  "Incompatible",
+                  "Deprecated"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "version",
+              "state"
+            ]
+          }
+        },
+        "gameEngineStyles": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "primary": {
+              "type": "object",
+              "properties": {
+                "light": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "main": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "dark": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "contrastText": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "secondary": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "light": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "main": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "dark": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "contrastText": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "primary"
+          ]
+        }
+      }
+    }
+  }
+}
