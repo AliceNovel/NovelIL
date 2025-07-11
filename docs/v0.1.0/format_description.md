@@ -25,7 +25,7 @@ At the highest level, a Novel IL is a dictionary with a few keys:
     {
       "character": "Alice", // name or character
       "images": {
-        "frontground": ["alice-normal.png"],
+        "foreground": ["alice-normal.png"],
         "background": ["green-park.png"]
       },
       "text": "Hi, there." // text or message
@@ -33,7 +33,7 @@ At the highest level, a Novel IL is a dictionary with a few keys:
     {
       "character": "Rabbit", 
       "images": {
-        "frontground": ["rabbit-normal.png"],
+        "foreground": ["rabbit-normal.png"],
         "background": ["green-park.png"]
       },
       // or
@@ -57,7 +57,7 @@ There are a few basic cell types for encapsulating code and text. All cells have
   "message": "character message",
   "images": [
     "background-image.png",
-    "frontground-image.png" // e.g. character image
+    "foreground-image.png" // e.g. character image
   ]
 }
 ```
@@ -66,9 +66,9 @@ There are a few basic cell types for encapsulating code and text. All cells have
 
 Metadata is a place that you can put arbitrary JSONable information about your NIL, cell, or output.
 
-Metadata firlds officially defined for Novel IL are listed here:
+Metadata fields officially defined for Novel IL are listed here:
 
 | Key | Value | Interpretation |
 | -- | -- | -- |
 | title | str | A game title |
-| authors | list of dicts | A list of authors of the novel game |
+| authors | list of strings | A list of authors of the novel game |

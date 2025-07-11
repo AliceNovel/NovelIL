@@ -1,6 +1,6 @@
 # Novel IL
 
-The C# implemention for creating Json Schema for Novel IL.
+The C# implementation for creating Json Schema for Novel IL.
 
 ## How to use
 
