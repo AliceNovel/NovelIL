@@ -11,7 +11,7 @@ The C# implementation for creating Json Schema for Novel IL.
 ### Building the app locally
 
 ```sh
-cd NovelIL/src/NovelIL
+cd NovelIL
 dotnet run > output.json
 ```
 
