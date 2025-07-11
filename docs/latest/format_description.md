@@ -54,11 +54,11 @@ There are a few basic cell types for encapsulating code and text. All cells have
 ```json
 {
   "character": "character name",
-  "message": "character message",
-  "images": [
-    "background-image.png",
-    "foreground-image.png" // e.g. character image
-  ]
+  "text": "character message", // text or message
+  "images": {
+    "foreground": ["foreground-image.png"], // e.g. character image
+    "background": ["background-image.png"]
+  }
 }
 ```
 
