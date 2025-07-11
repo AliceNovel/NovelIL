@@ -36,7 +36,7 @@ public class Program
     /// </summary>
     class NILJsonSchema
     {
-        public Cell? Cells { get; set; }
+        public Cell[]? Cells { get; set; }
         public Meta? Metadata { get; set; }
 
         public class Cell
@@ -73,7 +73,7 @@ public class Program
             public class GameInformation
             {
                 public string? Title { get; set; }
-                public string[]? Author { get; set; }
+                public string[]? Authors { get; set; }
                 public string? Description { get; set; }
                 public string? Version { get; set; }
                 public string? License { get; set; }

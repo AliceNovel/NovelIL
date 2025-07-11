@@ -3,127 +3,130 @@
   "properties": {
     "cells": {
       "type": [
-        "object",
+        "array",
         "null"
       ],
-      "properties": {
-        "name": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "text": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "images": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "foreground": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "background": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
-        },
-        "audio": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "foreground": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "background": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
-        },
-        "movies": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "foreground": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "background": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
-        },
-        "plugins": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "version": {
-              "type": [
-                "string",
-                "null"
-              ]
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "images": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "foreground": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "background": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
             }
           },
-          "required": [
-            "name"
-          ]
-        },
-        "selectors": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "ifAnd": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "ifOr": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "additionalProperties": {
-            "type": "string"
+          "audio": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "foreground": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "background": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "movies": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "foreground": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "background": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "plugins": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "name"
+            ]
+          },
+          "selectors": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "ifAnd": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "ifOr": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": "string"
+            }
           }
         }
       }
@@ -146,7 +149,7 @@
                 "null"
               ]
             },
-            "author": {
+            "authors": {
               "type": [
                 "array",
                 "null"
