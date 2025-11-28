@@ -18,9 +18,11 @@ At the highest level, a Novel IL is a dictionary with a few keys:
     "authors": [
       "Alice Project"
     ],
-    "language_info": "English",
+    "languageInfo": [
+      "English"
+    ],
     "version": "1.0.0"
-  },
+  }
   "cells": [
     {
       "character": "Alice", // name or character
