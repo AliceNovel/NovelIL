@@ -59,6 +59,16 @@ There are a few basic cell types for encapsulating code and text. All cells have
 }
 ```
 
+Cell fields officially defined for Novel IL are listed here:
+
+| Key | Value | Interpretation |
+| -- | -- | -- |
+| `name` | `str` | The character name |
+| `text` | `str` | The message box text |
+| `images` | *foreground* and *background* `lists` of `strings` | Display images |
+| `audio` | *foreground* and *background* `lists` of `strings` | Music, sound effects, etc. |
+| `movies` | *foreground* and *background* `lists` of `strings` | Play movies |
+
 ## Metadata
 
 Metadata is a place that you can put arbitrary JSONable information about your NIL, cell, or output.
@@ -69,7 +79,7 @@ Metadata fields officially defined for Novel IL are listed here:
 | -- | -- | -- |
 | `title` | `str` | A game title |
 | `authors` | `list` of `strings` | A list of authors of the novel game |
-| `description` | `str` | A description of the game |  
-| `version` | `str` | The version of the novel game file |  
-| `license` | `str` | The license of the game |  
-| `languageInfo` | `list` of `strings` | The languages the game supports |  
+| `description` | `str` | A description of the game |
+| `version` | `str` | The version of the novel game file |
+| `license` | `str` | The license of the game |
+| `languageInfo` | `list` of `strings` | The languages the game supports |
