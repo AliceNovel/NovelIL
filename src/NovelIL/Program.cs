@@ -53,8 +53,8 @@ public class Program
 
             public class Assets
             {
-                public string? Foreground { get; set; }
-                public string? Background { get; set; }
+                public string[]? Foreground { get; set; }
+                public string[]? Background { get; set; }
             }
             public class Plugin
             {

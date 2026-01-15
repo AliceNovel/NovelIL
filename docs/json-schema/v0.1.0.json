@@ -29,15 +29,21 @@
             "properties": {
               "foreground": {
                 "type": [
-                  "string",
+                  "array",
                   "null"
-                ]
+                ],
+                "items": {
+                  "type": "string"
+                }
               },
               "background": {
                 "type": [
-                  "string",
+                  "array",
                   "null"
-                ]
+                ],
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -48,16 +54,10 @@
             ],
             "properties": {
               "foreground": {
-                "type": [
-                  "string",
-                  "null"
-                ]
+                "$ref": "#/properties/cells/items/properties/images/properties/foreground"
               },
               "background": {
-                "type": [
-                  "string",
-                  "null"
-                ]
+                "$ref": "#/properties/cells/items/properties/images/properties/background"
               }
             }
           },
@@ -68,16 +68,10 @@
             ],
             "properties": {
               "foreground": {
-                "type": [
-                  "string",
-                  "null"
-                ]
+                "$ref": "#/properties/cells/items/properties/images/properties/foreground"
               },
               "background": {
-                "type": [
-                  "string",
-                  "null"
-                ]
+                "$ref": "#/properties/cells/items/properties/images/properties/background"
               }
             }
           },
