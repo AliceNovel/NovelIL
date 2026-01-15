@@ -4,16 +4,16 @@ title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
 # - text: Get Started
-#   link: /get-started.html
+#   link: /en/get-started.html
 #   type: primary
 
   - text: Latest Specification
     link: /en/format-description/latest.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
-    type: secondary
+# - text: Introduction
+#   link: https://vuejs.press/guide/introduction.html
+#   type: secondary
 
 # features:
 #   - title: Simplicity First

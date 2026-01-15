@@ -1,6 +1,6 @@
 # The NIL file format
 
-The official Novel IL format is defined with Json.
+The official Novel IL format is defined with [Json](../../json-schema/latest.json).
 
 This page contains a human-readable description of the Novel IL format.
 
