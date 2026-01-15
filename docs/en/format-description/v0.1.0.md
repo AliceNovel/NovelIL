@@ -69,7 +69,6 @@ Metadata fields officially defined for Novel IL are listed here:
 | -- | -- | -- |
 | `title` | `str` | A game title |
 | `authors` | `list` of `strings` | A list of authors of the novel game |
-| `authors` | `list` of `strings` | A list of authors of the novel game |  
 | `description` | `str` | A description of the game |  
 | `version` | `str` | The version of the novel game file |  
 | `license` | `str` | The license of the game |  
