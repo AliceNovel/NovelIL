@@ -6,7 +6,7 @@ The C# implementation for creating Json Schema for Novel IL.
 
 ### Require
 
-- .NET 9 or later
+- .NET 10 or later
 
 ### Building the app locally
 

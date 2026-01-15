@@ -21,7 +21,7 @@ public class Program
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
             },
-            typeof(NILJsonSchema),
+            typeof(NovelILDocument),
             exporterOptions: new()
             {
                 TreatNullObliviousAsNonNullable = true,
@@ -34,7 +34,7 @@ public class Program
     /// <summary>
     /// NIL Json Schema
     /// </summary>
-    class NILJsonSchema
+    class NovelILDocument
     {
         public Cell[]? Cells { get; set; }
         public Meta? Metadata { get; set; }
