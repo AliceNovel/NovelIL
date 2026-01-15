@@ -87,7 +87,7 @@ public class Program
             }
             public class GameEngineStyle
             {
-                public required Color Primary { get; set; }
+                public Color? Primary { get; set; }
                 public Color? Secondary { get; set; }
 
                 public class Color

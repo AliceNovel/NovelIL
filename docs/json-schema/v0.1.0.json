@@ -225,7 +225,10 @@
           ],
           "properties": {
             "primary": {
-              "type": "object",
+              "type": [
+                "object",
+                "null"
+              ],
               "properties": {
                 "light": {
                   "type": [
@@ -285,10 +288,7 @@
                 }
               }
             }
-          },
-          "required": [
-            "primary"
-          ]
+          }
         }
       }
     }
