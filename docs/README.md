@@ -15,6 +15,10 @@ actions:
 #   link: https://vuejs.press/guide/introduction.html
 #   type: secondary
 
+  - text: Anov Syntax
+    link: https://alicenovel.web.app/en
+    type: secondary
+
 # features:
 #   - title: Simplicity First
 #     details: Minimal setup with markdown-centered project structure helps you focus on writing.
