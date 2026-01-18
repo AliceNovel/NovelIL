@@ -2,6 +2,7 @@
 
 This is a normal page, which contains VuePress basics.
 
+<!--
 ## Pages
 
 You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
@@ -44,3 +45,4 @@ You can [add extra style][style] with `.vuepress/styles/index.scss` file.
 [sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
 [default-theme]: https://vuejs.press/reference/default-theme/
 [style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+-->

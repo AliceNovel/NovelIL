@@ -25,11 +25,11 @@ export default defineUserConfig({
     locales: {
       '/': {
         selectLanguageName: 'English',
-        navbar: ['/', '/get-started'],
+        navbar: ['/', /*'/en/get-started',*/ '/en/format-description/latest'],
       },
       '/ja/': {
         selectLanguageName: '日本語',
-        navbar: ['/ja/', '/ja/get-started'],
+        navbar: ['/ja/', /*'/ja/get-started',*/ '/ja/format-description/latest'],
       },
     },
   }),

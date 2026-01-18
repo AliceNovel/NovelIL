@@ -3,12 +3,20 @@ home: true
 title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: Get Started
-    link: /get-started.html
+# - text: Get Started
+#   link: /en/get-started.html
+#   type: primary
+
+  - text: Latest Specification
+    link: /en/format-description/latest.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+# - text: Introduction
+#   link: https://vuejs.press/guide/introduction.html
+#   type: secondary
+
+  - text: Anov Syntax
+    link: https://alicenovel.web.app/en
     type: secondary
 
 # features:

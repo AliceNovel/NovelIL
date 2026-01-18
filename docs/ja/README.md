@@ -3,12 +3,20 @@ home: true
 title: ホーム
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: はじめに
-    link: /ja/get-started.html
+# - text: はじめに
+#   link: /ja/get-started.html
+#   type: primary
+
+  - text: 最新スペック
+    link: /ja/format-description/latest.html
     type: primary
 
-  - text: 紹介
-    link: https://vuejs.press/guide/introduction.html
+# - text: 紹介
+#   link: https://vuejs.press/guide/introduction.html
+#   type: secondary
+
+  - text: Anov 構文
+    link: https://alicenovel.web.app/ja
     type: secondary
 
 # features:
