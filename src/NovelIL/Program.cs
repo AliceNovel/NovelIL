@@ -60,7 +60,12 @@ public class Program
             {
                 public required string Name { get; set; }
                 public string? Version { get; set; }
-                // TBD: Add more properties as needed
+                public bool Enable { get; set; } = true;
+                /// <summary>
+                /// Other any properties as needed
+                /// </summary>
+                [JsonExtensionData]
+                public Dictionary<string, JsonElement>? AdditionalProperties { get; set; }
             }
         }
 
