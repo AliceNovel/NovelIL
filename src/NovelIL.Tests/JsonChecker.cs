@@ -1,18 +1,10 @@
-﻿using System.Text.Json;
-using Json.Schema;
-using NovelIL;
-
-namespace NovelIL.Tests;
+﻿namespace NovelIL.Tests;
 
 public class UnitTest1
 {
     [Fact]
-    static public void JsonChecker()
+    static public void JsonCheckerTest()
     {
-        // schema 読み込み
-        string jsonSchemaString = Program.CreateJsonSchema();
-        JsonSchema jsonSchema = JsonSchema.FromText(jsonSchemaString);
-
         // JSON 読み込み
         string jsonText = """
         {
@@ -46,18 +38,10 @@ public class UnitTest1
             ]
         }
         """;
-        using JsonDocument document = JsonDocument.Parse(jsonText);
 
-        // バリデーション実行
-        EvaluationResults results = jsonSchema.Evaluate(document.RootElement);
+        var result = JsonChecker.Validate(jsonText);
 
-        // 判定
-        if (results.IsValid)
-            Console.WriteLine("✅ JSON は schema に適合しています");
-        else
-        {
-            Console.WriteLine("❌ JSON は schema に適合していません");
-            Console.Error.WriteLine(results);
-        }
+        if (!result.IsValid && result.Error is not null)
+            Console.WriteLine(result.Error);
     }
 }

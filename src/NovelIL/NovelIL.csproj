@@ -31,6 +31,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="JsonSchema.Net" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="../README.md">
       <Pack>True</Pack>
       <PackagePath>/</PackagePath>
