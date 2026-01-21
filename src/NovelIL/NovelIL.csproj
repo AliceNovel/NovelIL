@@ -5,6 +5,29 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet -->
+    <PackageId>AliceProject.NovelIL</PackageId>
+    <!-- <Version>0.1.0</Version> -->
+    <Authors>AliceProject</Authors>
+    <Company>$(Authors)</Company>
+    <Copyright>© Alice Project. All rights reserved.</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IsPackable>True</IsPackable>
+    <PackageProjectUrl>https://github.com/AliceNovel/NovelIL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AliceNovel/NovelIL</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>aliceproject;alicesystem;nil;novelil;</PackageTags>
+    <IncludeSymbols>True</IncludeSymbols>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Title>Novel IL</Title>
+    <Description>Provides the JSON Schema and type for Novel IL, an intermediate language for visual novel development.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <DebugType>portable</DebugType>
+    <!-- <PackageIcon>icon.png</PackageIcon> -->
   </PropertyGroup>
 
   <ItemGroup>
