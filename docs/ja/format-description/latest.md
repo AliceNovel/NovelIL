@@ -1,6 +1,6 @@
 # NIL ファイルフォーマット
 
-公式 Novel IL フォーマットは [Json](https://github.com/AliceNovel/NovelIL/blob/d9e40984eb1169f22e7bd39c29d410ad4a8d6300/docs/json-schema/latest.json) によって定義されています。
+公式 Novel IL フォーマットは [Json スキーマ](https://github.com/AliceNovel/NovelIL/blob/d9e40984eb1169f22e7bd39c29d410ad4a8d6300/docs/json-schema/latest.json)によって定義され、Novel IL ツールでコードの検証をする際に利用されます。
 
 このページは Novel IL フォーマットを人間が可読できるような説明を記載しています。
 
