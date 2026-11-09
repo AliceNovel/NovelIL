@@ -21,58 +21,37 @@
               "null"
             ]
           },
-          "images": {
+          "resources": {
             "type": [
-              "object",
+              "array",
               "null"
             ],
-            "properties": {
-              "foreground": {
-                "type": [
-                  "array",
-                  "null"
-                ],
-                "items": {
+            "items": {
+              "type": "object",
+              "properties": {
+                "path": {
                   "type": "string"
+                },
+                "resourceType": {
+                  "enum": [
+                    "Image",
+                    "Audio",
+                    "Video",
+                    "Unknown"
+                  ]
+                },
+                "layer": {
+                  "enum": [
+                    "Foreground",
+                    "Background"
+                  ]
                 }
               },
-              "background": {
-                "type": [
-                  "array",
-                  "null"
-                ],
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "audio": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "properties": {
-              "foreground": {
-                "$ref": "#/properties/cells/items/properties/images/properties/foreground"
-              },
-              "background": {
-                "$ref": "#/properties/cells/items/properties/images/properties/background"
-              }
-            }
-          },
-          "movies": {
-            "type": [
-              "object",
-              "null"
-            ],
-            "properties": {
-              "foreground": {
-                "$ref": "#/properties/cells/items/properties/images/properties/foreground"
-              },
-              "background": {
-                "$ref": "#/properties/cells/items/properties/images/properties/background"
-              }
+              "required": [
+                "path",
+                "resourceType",
+                "layer"
+              ]
             }
           },
           "plugins": {

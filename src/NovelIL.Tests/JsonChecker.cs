@@ -21,18 +21,34 @@ public class UnitTest1
             "cells": [
                 {
                     "name": "Alice",
-                    "images": {
-                        "foreground": ["alice-normal.png"],
-                        "background": ["green-park.png"]
-                    },
+                    "resources": [
+                        {
+                            "path": "alice-normal.png",
+                            "resourcetype": "image",
+                            "layer": "foreground"
+                        },
+                        {
+                            "path": "green-park.png",
+                            "resourcetype": "image",
+                            "layer": "background"
+                        }
+                    ],
                     "text": "Hi, there."
                 },
                 {
-                    "name": "Rabbit", 
-                    "images": {
-                        "foreground": ["rabbit-normal.png"],
-                        "background": ["green-park.png"]
-                    },
+                    "name": "Rabbit",
+                    "resources": [
+                        {
+                            "path": "rabbit-normal.png",
+                            "resourcetype": "image",
+                            "layer": "foreground"
+                        },
+                        {
+                            "path": "green-park.png",
+                            "resourcetype": "image",
+                            "layer": "background"
+                        }
+                    ],
                     "text": "Hi, Alice!"
                 }
             ]

@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownExtPlugin } from '@vuepress/plugin-markdown-ext'
 
 export default defineUserConfig({
   locales: {
@@ -35,4 +36,11 @@ export default defineUserConfig({
   }),
 
   bundler: viteBundler(),
+
+  plugins: [
+    markdownExtPlugin({
+      gfm: true,
+      cjkFriendly: true
+    }),
+  ],
 })
