@@ -1,6 +1,6 @@
 # The NIL file format
 
-The official Novel IL format is defined with [this JSON schema](https://github.com/AliceNovel/NovelIL/blob/d9e40984eb1169f22e7bd39c29d410ad4a8d6300/docs/json-schema/v0.1.0.json), which is used by Novel IL tools to validate codes.
+The official Novel IL format is defined with [this JSON schema](https://github.com/AliceNovel/NovelIL/blob/5c7a2f6b65a073cd5d5f97f2e0cea785731f50f6/docs/json-schema/latest.json), which is used by Novel IL tools to validate codes.
 
 This page contains a human-readable description of the Novel IL format.
 
@@ -26,18 +26,34 @@ At the highest level, a Novel IL is a dictionary with a few keys:
   "cells": [
     {
       "name": "Alice", // name or character
-      "images": {
-        "foreground": ["alice-normal.png"],
-        "background": ["green-park.png"]
-      },
+      "resources": [
+        {
+          "path": "alice-normal.png",
+          "resourcetype": "image",
+          "layer": "foreground"
+        },
+        {
+          "path": "green-park.png",
+          "resourcetype": "image",
+          "layer": "background"
+        }
+      ],
       "text": "Hi, there." // text or message
     },
     {
-      "name": "Rabbit", 
-      "images": {
-        "foreground": ["rabbit-normal.png"],
-        "background": ["green-park.png"]
-      },
+      "name": "Rabbit",
+      "resources": [
+        {
+          "path": "rabbit-normal.png",
+          "resourcetype": "image",
+          "layer": "foreground"
+        },
+        {
+          "path": "green-park.png",
+          "resourcetype": "image",
+          "layer": "background"
+        }
+      ],
       "text": "Hi, Alice!"
     }
   ]
@@ -52,10 +68,18 @@ There are a few basic cell types for encapsulating code and text. All cells have
 {
   "name": "character name",
   "text": "character message", // text or message
-  "images": {
-    "foreground": ["foreground-image.png"], // e.g. character image
-    "background": ["background-image.png"]
-  }
+  "resources": [
+    {
+      "path": "foreground-image.png", // e.g. character image
+      "resourcetype": "image",
+      "layer": "foreground"
+    },
+    {
+      "path": "background-image.png",
+      "resourcetype": "image",
+      "layer": "background"
+    }
+  ]
 }
 ```
 
@@ -65,9 +89,9 @@ Cell fields officially defined for Novel IL are listed here:
 | -- | -- | -- |
 | `name` | `str` | The character name |
 | `text` | `str` | The message box text |
-| `images` | *foreground* and *background* `lists` of `strings` | Display images |
-| `audio` | *foreground* and *background* `lists` of `strings` | Music, sound effects, etc. |
-| `movies` | *foreground* and *background* `lists` of `strings` | Play movies |
+| `resources` | `list` of resource[^res] | Image, Audio, Video etc. | 
+
+[^res]: Class of \[path (`str`), resourcetype (`enum`: image, audio, video, unknown), layer (`enum`: foreground (1), background (-1), any int number)\]
 
 ## Metadata
 
