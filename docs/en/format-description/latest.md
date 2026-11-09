@@ -1,6 +1,6 @@
 # The NIL file format
 
-The official Novel IL format is defined with [this JSON schema](https://github.com/AliceNovel/NovelIL/blob/5c7a2f6b65a073cd5d5f97f2e0cea785731f50f6/docs/json-schema/latest.json), which is used by Novel IL tools to validate codes.
+The official Novel IL format is defined with [this JSON schema](https://github.com/AliceNovel/NovelIL/blob/ebea219ecca73f4c85d7628dd3320abed01c2aef/docs/json-schema/latest.json), which is used by Novel IL tools to validate codes.
 
 This page contains a human-readable description of the Novel IL format.
 
