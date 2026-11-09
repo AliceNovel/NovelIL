@@ -15,18 +15,17 @@ public class NovelILDocument
     {
         public string? Name { get; set; } // Character Name
         public string? Text { get; set; } // Message
-        public Assets? Images { get; set; }
-        public Assets? Audio { get; set; } // (Music, Sound Effects, etc.)
-        public Assets? Movies { get; set; }
+        public Resource[]? Resources { get; set; } // Images, Audios, Videos, etc.
         public Plugin? Plugins { get; set; } // For future extensibility
         public Dictionary<string, string>? Selectors { get; set; } // For future extensibility
         public Dictionary<string, string>? IfAnd { get; set; } // For future extensibility
         public Dictionary<string, string>? IfOr { get; set; } // For future extensibility
 
-        public class Assets
+        public class Resource
         {
-            public string[]? Foreground { get; set; }
-            public string[]? Background { get; set; }
+            public required string Src { get; set; }
+            public ResourceType Type { get; set; } = ResourceType.Unknown;
+            public LayerLevel Layer { get; set; } = LayerLevel.Foreground;
         }
         public class Plugin
         {
@@ -38,6 +37,25 @@ public class NovelILDocument
             /// </summary>
             [JsonExtensionData]
             public Dictionary<string, JsonElement>? AdditionalProperties { get; set; }
+        }
+
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public enum ResourceType
+        {
+            Image,
+            Audio,
+            Video,
+            Unknown
+        }
+
+        /// <summary>
+        /// You can use Foreground (1) or Background (-1) or any numbers; e.g. (LayerLevel)3
+        /// </summary>
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public enum LayerLevel
+        {
+            Foreground = 1, // Default
+            Background = -1
         }
     }
 
@@ -60,7 +78,7 @@ public class NovelILDocument
         {
             public required string Name { get; set; }
             public required string Version { get; set; }
-            public required State State { get; set; } = State.Unknown;
+            public State State { get; set; } = State.Unknown;
         }
         public class GameEngineStyle
         {

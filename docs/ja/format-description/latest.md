@@ -1,6 +1,6 @@
 # NIL ファイルフォーマット
 
-公式 Novel IL フォーマットは [Json スキーマ](https://github.com/AliceNovel/NovelIL/blob/d9e40984eb1169f22e7bd39c29d410ad4a8d6300/docs/json-schema/latest.json)によって定義され、Novel IL ツールでコードの検証をする際に利用されます。
+公式 Novel IL フォーマットは [Json スキーマ](https://github.com/AliceNovel/NovelIL/blob/ebea219ecca73f4c85d7628dd3320abed01c2aef/docs/json-schema/latest.json)によって定義され、Novel IL ツールでコードの検証をする際に利用されます。
 
 このページは Novel IL フォーマットを人間が可読できるような説明を記載しています。
 
@@ -26,18 +26,34 @@ Novel IL の最上位構造として、辞書型として以下が定義され�
   "cells": [
     {
       "name": "アリス", // name or character
-      "images": {
-        "foreground": ["alice-normal.png"],
-        "background": ["green-park.png"]
-      },
+      "resources": [
+        {
+          "src": "alice-normal.png",
+          "type": "image",
+          "layer": "foreground"
+        },
+        {
+          "src": "green-park.png",
+          "type": "image",
+          "layer": "background"
+        }
+      ],
       "text": "こんにちは。" // text or message
     },
     {
-      "name": "うさぎ", 
-      "images": {
-        "foreground": ["rabbit-normal.png"],
-        "background": ["green-park.png"]
-      },
+      "name": "うさぎ",
+      "resources": [
+        {
+          "src": "rabbit-normal.png",
+          "type": "image",
+          "layer": "foreground"
+        },
+        {
+          "src": "green-park.png",
+          "type": "image",
+          "layer": "background"
+        }
+      ],
       "text": "こんにちは、アリス!"
     }
   ]
@@ -52,10 +68,18 @@ Novel IL の最上位構造として、辞書型として以下が定義され�
 {
   "name": "キャラクター名",
   "text": "キャラクターメッセージ", // text or message
-  "images": {
-    "foreground": ["foreground-image.png"], // e.g. character image
-    "background": ["background-image.png"]
-  }
+  "resources": [
+    {
+      "src": "foreground-image.png", // e.g. character image
+      "type": "image",
+      "layer": "foreground"
+    },
+    {
+      "src": "background-image.png",
+      "type": "image",
+      "layer": "background"
+    }
+  ]
 }
 ```
 
@@ -65,9 +89,9 @@ Novel IL の Cell 領域では、公式に以下のものが定義されてい�
 | -- | -- | -- |
 | `name` | `str` | キャラクター名 |
 | `text` | `str` | メッセージボックス内に表示するテキスト |
-| `images` | *foreground* and *background* `lists` of `strings` | 表示する画像 |
-| `audio` | *foreground* and *background* `lists` of `strings` | 音声、効果音、その他 |
-| `movies` | *foreground* and *background* `lists` of `strings` | 再生する動画 |
+| `resources` | `list` of resource[^res] | 画像、音声、動画など | 
+
+[^res]: \[src (`str`), type (`enum`: image, audio, video, unknown), layer (`enum`: foreground (1), background (-1), int 整数)\] のクラス
 
 ## Metadata
 
