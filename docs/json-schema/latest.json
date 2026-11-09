@@ -29,10 +29,10 @@
             "items": {
               "type": "object",
               "properties": {
-                "path": {
+                "src": {
                   "type": "string"
                 },
-                "resourceType": {
+                "type": {
                   "enum": [
                     "Image",
                     "Audio",
@@ -48,9 +48,7 @@
                 }
               },
               "required": [
-                "path",
-                "resourceType",
-                "layer"
+                "src"
               ]
             }
           },
@@ -189,8 +187,7 @@
             },
             "required": [
               "name",
-              "version",
-              "state"
+              "version"
             ]
           }
         },

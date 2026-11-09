@@ -28,13 +28,13 @@ Novel IL の最上位構造として、辞書型として以下が定義され�
       "name": "アリス", // name or character
       "resources": [
         {
-          "path": "alice-normal.png",
-          "resourcetype": "image",
+          "src": "alice-normal.png",
+          "type": "image",
           "layer": "foreground"
         },
         {
-          "path": "green-park.png",
-          "resourcetype": "image",
+          "src": "green-park.png",
+          "type": "image",
           "layer": "background"
         }
       ],
@@ -44,13 +44,13 @@ Novel IL の最上位構造として、辞書型として以下が定義され�
       "name": "うさぎ",
       "resources": [
         {
-          "path": "rabbit-normal.png",
-          "resourcetype": "image",
+          "src": "rabbit-normal.png",
+          "type": "image",
           "layer": "foreground"
         },
         {
-          "path": "green-park.png",
-          "resourcetype": "image",
+          "src": "green-park.png",
+          "type": "image",
           "layer": "background"
         }
       ],
@@ -70,13 +70,13 @@ Novel IL の最上位構造として、辞書型として以下が定義され�
   "text": "キャラクターメッセージ", // text or message
   "resources": [
     {
-      "path": "foreground-image.png", // e.g. character image
-      "resourcetype": "image",
+      "src": "foreground-image.png", // e.g. character image
+      "type": "image",
       "layer": "foreground"
     },
     {
-      "path": "background-image.png",
-      "resourcetype": "image",
+      "src": "background-image.png",
+      "type": "image",
       "layer": "background"
     }
   ]
@@ -91,7 +91,7 @@ Novel IL の Cell 領域では、公式に以下のものが定義されてい�
 | `text` | `str` | メッセージボックス内に表示するテキスト |
 | `resources` | `list` of resource[^res] | 画像、音声、動画など | 
 
-[^res]: \[path (`str`), resourcetype (`enum`: image, audio, video, unknown), layer (`enum`: foreground (1), background (-1), int 整数)\] のクラス
+[^res]: \[src (`str`), type (`enum`: image, audio, video, unknown), layer (`enum`: foreground (1), background (-1), int 整数)\] のクラス
 
 ## Metadata
 

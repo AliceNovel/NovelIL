@@ -23,9 +23,9 @@ public class NovelILDocument
 
         public class Resource
         {
-            public required string Path { get; set; }
-            public required ResourceType ResourceType { get; set; } = ResourceType.Unknown;
-            public required LayerLevel Layer { get; set; } = LayerLevel.Foreground;
+            public required string Src { get; set; }
+            public ResourceType Type { get; set; } = ResourceType.Unknown;
+            public LayerLevel Layer { get; set; } = LayerLevel.Foreground;
         }
         public class Plugin
         {
@@ -78,7 +78,7 @@ public class NovelILDocument
         {
             public required string Name { get; set; }
             public required string Version { get; set; }
-            public required State State { get; set; } = State.Unknown;
+            public State State { get; set; } = State.Unknown;
         }
         public class GameEngineStyle
         {

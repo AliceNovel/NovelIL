@@ -23,13 +23,13 @@ public class UnitTest1
                     "name": "Alice",
                     "resources": [
                         {
-                            "path": "alice-normal.png",
-                            "resourcetype": "image",
+                            "src": "alice-normal.png",
+                            "type": "image",
                             "layer": "foreground"
                         },
                         {
-                            "path": "green-park.png",
-                            "resourcetype": "image",
+                            "src": "green-park.png",
+                            "type": "image",
                             "layer": "background"
                         }
                     ],
@@ -39,13 +39,13 @@ public class UnitTest1
                     "name": "Rabbit",
                     "resources": [
                         {
-                            "path": "rabbit-normal.png",
-                            "resourcetype": "image",
+                            "src": "rabbit-normal.png",
+                            "type": "image",
                             "layer": "foreground"
                         },
                         {
-                            "path": "green-park.png",
-                            "resourcetype": "image",
+                            "src": "green-park.png",
+                            "type": "image",
                             "layer": "background"
                         }
                     ],
